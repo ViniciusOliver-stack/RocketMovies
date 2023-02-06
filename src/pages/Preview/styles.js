@@ -24,7 +24,7 @@ export const Section = styled.section`
     .rateMovie{
       display: flex;
       align-items: center;
-      margin-top: 2.4rem;
+      margin: 2.4rem 0;
       gap: 1rem;
 
       > p {
@@ -50,6 +50,7 @@ export const Section = styled.section`
     .rateUser{
       display: flex;
       align-items: center;
+      gap: .8rem;
 
       .user,
       .date{
@@ -81,5 +82,13 @@ export const Section = styled.section`
      }
       
     }
+  }
+
+  .tags{
+    margin: 4.8rem 0;
+  }
+
+  .resumeMovie p{
+    padding-bottom: 2rem;
   }
 `
