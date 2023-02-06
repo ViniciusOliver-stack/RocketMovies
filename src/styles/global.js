@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components"
+import { createGlobalStyle } from 'styled-components'
 
 export default createGlobalStyle`
 
@@ -17,12 +17,21 @@ export default createGlobalStyle`
 }
 
 body{
-  background-color: ${({theme}) => theme.COLORS.BACKGROUND_900};
-  color: ${({theme}) => theme.COLORS.WHITE};
+  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
+  color: ${({ theme }) => theme.COLORS.WHITE};
 }
 
 :root{
   font-size: 62.5%;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;               /* width of the entire scrollbar */
+  }
+
+*::-webkit-scrollbar-thumb {
+    background-color: ${({ theme }) => theme.COLORS.PINK};    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
 }
 
 `
