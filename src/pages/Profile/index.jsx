@@ -1,6 +1,6 @@
 import { Container } from './index'
 
-export function Perfil(){
+export function Profile(){
   return(
     <Container>
       
