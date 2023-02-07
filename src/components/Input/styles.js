@@ -2,17 +2,22 @@ import styled from "styled-components"
 
 export const Container = styled.div`
  
-  width: 630px;
+  display: flex; 
+  align-items: center;
+
+  width: 100%;
 
   background: none;
   background-color: ${({theme}) => theme.COLORS.BACKGROUND_800};
 
   border-radius: 10px;
+  margin-bottom: 8px;
 
+  
   > input {
-    width: 100%;
+    width: 630px;
     height: 56px;
-
+  
     background: transparent;
     border: none;
 
@@ -28,5 +33,10 @@ export const Container = styled.div`
     
     color: ${({theme}) => theme.COLORS.GRAY_300};
   }
+
+  > svg{
+      margin-left: 16px;
+      width: 60px;
+    }
 
 `
